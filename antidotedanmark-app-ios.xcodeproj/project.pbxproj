@@ -1,0 +1,382 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AF6A844F1EB26286000EFED7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF6A844E1EB26286000EFED7 /* AppDelegate.swift */; };
+		AF6A84511EB26286000EFED7 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF6A84501EB26286000EFED7 /* MenuViewController.swift */; };
+		AF6A84541EB26286000EFED7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF6A84521EB26286000EFED7 /* Main.storyboard */; };
+		AF6A84561EB26286000EFED7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF6A84551EB26286000EFED7 /* Assets.xcassets */; };
+		AF6A84591EB26286000EFED7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF6A84571EB26286000EFED7 /* LaunchScreen.storyboard */; };
+		AF6A84681EB266A6000EFED7 /* PageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF6A84661EB266A6000EFED7 /* PageCollectionViewCell.swift */; };
+		AF6A84691EB266A6000EFED7 /* PageCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF6A84671EB266A6000EFED7 /* PageCollectionViewCell.xib */; };
+		AF98924E1EB280600007FA62 /* RSSItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF98924D1EB280600007FA62 /* RSSItemViewModel.swift */; };
+		AF9892501EB280E60007FA62 /* InstructionItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF98924F1EB280E60007FA62 /* InstructionItemViewModel.swift */; };
+		AF9892521EB281DF0007FA62 /* RSSItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF9892511EB281DF0007FA62 /* RSSItem.swift */; };
+		AF9892541EB281ED0007FA62 /* InstructionItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF9892531EB281EC0007FA62 /* InstructionItem.swift */; };
+		AF9892561EB2824E0007FA62 /* RSSItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF9892551EB2824E0007FA62 /* RSSItems.swift */; };
+		AF9892581EB2827E0007FA62 /* IntructionsItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF9892571EB2827E0007FA62 /* IntructionsItems.swift */; };
+		AFB41C451EB2709000216D28 /* MenuCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB41C431EB2709000216D28 /* MenuCollectionViewCell.swift */; };
+		AFB41C461EB2709000216D28 /* MenuCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AFB41C441EB2709000216D28 /* MenuCollectionViewCell.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		AF6A844B1EB26285000EFED7 /* antidotedanmark-app-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "antidotedanmark-app-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF6A844E1EB26286000EFED7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		AF6A84501EB26286000EFED7 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		AF6A84531EB26286000EFED7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AF6A84551EB26286000EFED7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AF6A84581EB26286000EFED7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		AF6A845A1EB26286000EFED7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AF6A84661EB266A6000EFED7 /* PageCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageCollectionViewCell.swift; sourceTree = "<group>"; };
+		AF6A84671EB266A6000EFED7 /* PageCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PageCollectionViewCell.xib; sourceTree = "<group>"; };
+		AF98924D1EB280600007FA62 /* RSSItemViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RSSItemViewModel.swift; sourceTree = "<group>"; };
+		AF98924F1EB280E60007FA62 /* InstructionItemViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InstructionItemViewModel.swift; sourceTree = "<group>"; };
+		AF9892511EB281DF0007FA62 /* RSSItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RSSItem.swift; sourceTree = "<group>"; };
+		AF9892531EB281EC0007FA62 /* InstructionItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InstructionItem.swift; sourceTree = "<group>"; };
+		AF9892551EB2824E0007FA62 /* RSSItems.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RSSItems.swift; sourceTree = "<group>"; };
+		AF9892571EB2827E0007FA62 /* IntructionsItems.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntructionsItems.swift; sourceTree = "<group>"; };
+		AFB41C431EB2709000216D28 /* MenuCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuCollectionViewCell.swift; sourceTree = "<group>"; };
+		AFB41C441EB2709000216D28 /* MenuCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MenuCollectionViewCell.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AF6A84481EB26285000EFED7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AF6A84421EB26285000EFED7 = {
+			isa = PBXGroup;
+			children = (
+				AF6A844D1EB26285000EFED7 /* antidotedanmark-app-ios */,
+				AF6A844C1EB26285000EFED7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AF6A844C1EB26285000EFED7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AF6A844B1EB26285000EFED7 /* antidotedanmark-app-ios.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AF6A844D1EB26285000EFED7 /* antidotedanmark-app-ios */ = {
+			isa = PBXGroup;
+			children = (
+				AF6A844E1EB26286000EFED7 /* AppDelegate.swift */,
+				AF6A84521EB26286000EFED7 /* Main.storyboard */,
+				AF9892591EB285D20007FA62 /* ViewControllers */,
+				AF98924B1EB280300007FA62 /* Models */,
+				AF98924C1EB280430007FA62 /* ViewModels */,
+				AF98924A1EB280010007FA62 /* Views */,
+				AF6A84551EB26286000EFED7 /* Assets.xcassets */,
+				AF6A84571EB26286000EFED7 /* LaunchScreen.storyboard */,
+				AF6A845A1EB26286000EFED7 /* Info.plist */,
+			);
+			path = "antidotedanmark-app-ios";
+			sourceTree = "<group>";
+		};
+		AF98924A1EB280010007FA62 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				AFB41C431EB2709000216D28 /* MenuCollectionViewCell.swift */,
+				AFB41C441EB2709000216D28 /* MenuCollectionViewCell.xib */,
+				AF6A84661EB266A6000EFED7 /* PageCollectionViewCell.swift */,
+				AF6A84671EB266A6000EFED7 /* PageCollectionViewCell.xib */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		AF98924B1EB280300007FA62 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				AF9892511EB281DF0007FA62 /* RSSItem.swift */,
+				AF9892551EB2824E0007FA62 /* RSSItems.swift */,
+				AF9892531EB281EC0007FA62 /* InstructionItem.swift */,
+				AF9892571EB2827E0007FA62 /* IntructionsItems.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		AF98924C1EB280430007FA62 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				AF98924D1EB280600007FA62 /* RSSItemViewModel.swift */,
+				AF98924F1EB280E60007FA62 /* InstructionItemViewModel.swift */,
+			);
+			name = ViewModels;
+			sourceTree = "<group>";
+		};
+		AF9892591EB285D20007FA62 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				AF6A84501EB26286000EFED7 /* MenuViewController.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AF6A844A1EB26285000EFED7 /* antidotedanmark-app-ios */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AF6A845D1EB26286000EFED7 /* Build configuration list for PBXNativeTarget "antidotedanmark-app-ios" */;
+			buildPhases = (
+				AF6A84471EB26285000EFED7 /* Sources */,
+				AF6A84481EB26285000EFED7 /* Frameworks */,
+				AF6A84491EB26285000EFED7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "antidotedanmark-app-ios";
+			productName = "antidotedanmark-app-ios";
+			productReference = AF6A844B1EB26285000EFED7 /* antidotedanmark-app-ios.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AF6A84431EB26285000EFED7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = Criboe;
+				TargetAttributes = {
+					AF6A844A1EB26285000EFED7 = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = SG4MLU2P43;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = AF6A84461EB26285000EFED7 /* Build configuration list for PBXProject "antidotedanmark-app-ios" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AF6A84421EB26285000EFED7;
+			productRefGroup = AF6A844C1EB26285000EFED7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AF6A844A1EB26285000EFED7 /* antidotedanmark-app-ios */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AF6A84491EB26285000EFED7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF6A84591EB26286000EFED7 /* LaunchScreen.storyboard in Resources */,
+				AF6A84561EB26286000EFED7 /* Assets.xcassets in Resources */,
+				AFB41C461EB2709000216D28 /* MenuCollectionViewCell.xib in Resources */,
+				AF6A84541EB26286000EFED7 /* Main.storyboard in Resources */,
+				AF6A84691EB266A6000EFED7 /* PageCollectionViewCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AF6A84471EB26285000EFED7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF6A84511EB26286000EFED7 /* MenuViewController.swift in Sources */,
+				AF9892541EB281ED0007FA62 /* InstructionItem.swift in Sources */,
+				AF9892501EB280E60007FA62 /* InstructionItemViewModel.swift in Sources */,
+				AF98924E1EB280600007FA62 /* RSSItemViewModel.swift in Sources */,
+				AF9892521EB281DF0007FA62 /* RSSItem.swift in Sources */,
+				AF9892581EB2827E0007FA62 /* IntructionsItems.swift in Sources */,
+				AF6A844F1EB26286000EFED7 /* AppDelegate.swift in Sources */,
+				AF6A84681EB266A6000EFED7 /* PageCollectionViewCell.swift in Sources */,
+				AF9892561EB2824E0007FA62 /* RSSItems.swift in Sources */,
+				AFB41C451EB2709000216D28 /* MenuCollectionViewCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		AF6A84521EB26286000EFED7 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AF6A84531EB26286000EFED7 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		AF6A84571EB26286000EFED7 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AF6A84581EB26286000EFED7 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AF6A845B1EB26286000EFED7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		AF6A845C1EB26286000EFED7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AF6A845E1EB26286000EFED7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = SG4MLU2P43;
+				INFOPLIST_FILE = "antidotedanmark-app-ios/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.casperriboe.antidotedanmark-app-ios";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		AF6A845F1EB26286000EFED7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = SG4MLU2P43;
+				INFOPLIST_FILE = "antidotedanmark-app-ios/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.casperriboe.antidotedanmark-app-ios";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AF6A84461EB26285000EFED7 /* Build configuration list for PBXProject "antidotedanmark-app-ios" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AF6A845B1EB26286000EFED7 /* Debug */,
+				AF6A845C1EB26286000EFED7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AF6A845D1EB26286000EFED7 /* Build configuration list for PBXNativeTarget "antidotedanmark-app-ios" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AF6A845E1EB26286000EFED7 /* Debug */,
+				AF6A845F1EB26286000EFED7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AF6A84431EB26285000EFED7 /* Project object */;
+}
