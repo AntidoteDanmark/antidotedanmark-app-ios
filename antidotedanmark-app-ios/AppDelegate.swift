@@ -34,30 +34,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 		UINavigationBar.appearance().tintColor = adYellowColor
 		UINavigationBar.appearance().titleTextAttributes = [NSForegroundColorAttributeName: adTitleColor]
 		UIBarButtonItem.appearance().setBackButtonTitlePositionAdjustment(UIOffsetMake(0, -70), for: UIBarMetrics.default)
+		UINavigationBar.appearance().barTintColor = UIColor.gray
 		UIApplication.shared.statusBarStyle = UIStatusBarStyle.lightContent
-//		UINavigationBar.appearance().setBarStyle:UIBarStyleBlack]
-//		UINavigationBar.appearance().setTranslucent:NO]
-//		UINavigationBar.appearance().setOpaque:YES]
+		//UIApplication.shared.setStatusBarStyle(.lightContent, animated: false)
 		
-//		UINavigationBar.appearance().setTitleTextAttributes:
-//			[NSDictionary dictionaryWithObjectsAndKeys:
-//			[UIColor ti_navigationBarTitleTextColor],
-//			NSForegroundColorAttributeName,
-//			[UIFont ti_primaryFontWithSize:18.0f],
-//			NSFontAttributeName,
-//			nil]]
-//		
-//		UINavigationBar.appearance().setBackIndicatorImage:kImgBack]
-//		UINavigationBar.appearance().setBackIndicatorTransitionMaskImage:kImgBack]
-		
-		// hide globally the back text in navigation bar
-//		[[UIBarButtonItem appearance] setBackButtonTitlePositionAdjustment:UIOffsetMake(0, -70.f) forBarMetrics:UIBarMetricsDefault]
-//		
-//		// Replace the 'Cancel' button in a search bar with a white cross globally
-//		[[UIBarButtonItem appearanceWhenContainedInInstancesOfClasses:@[[UISearchBar class]]]
-//			setTitle:@""]
-//		[[UIBarButtonItem appearanceWhenContainedInInstancesOfClasses:@[[UISearchBar class]]]
-//			setImage:[UIImage imageNamed:@"white_cross_icon"]]
+		let statusBarView = UIView(frame: UIApplication.shared.statusBarFrame)
+		statusBarView.backgroundColor = adBackgroundColor
+		self.window?.rootViewController?.view.addSubview(statusBarView)
 	}
 
 	func applicationWillResignActive(_ application: UIApplication) {
