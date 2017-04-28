@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AF08B9991EB373D100D5DC9F /* RSSHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF08B9981EB373D100D5DC9F /* RSSHelper.swift */; };
+		AF08B99B1EB37F6800D5DC9F /* NewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF08B99A1EB37F6800D5DC9F /* NewsViewController.swift */; };
 		AF6A844F1EB26286000EFED7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF6A844E1EB26286000EFED7 /* AppDelegate.swift */; };
 		AF6A84511EB26286000EFED7 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF6A84501EB26286000EFED7 /* MenuViewController.swift */; };
 		AF6A84541EB26286000EFED7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF6A84521EB26286000EFED7 /* Main.storyboard */; };
@@ -23,9 +25,13 @@
 		AF98925F1EB28C7C0007FA62 /* InstructionCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF98925D1EB28C7C0007FA62 /* InstructionCollectionViewCell.xib */; };
 		AFB41C451EB2709000216D28 /* MenuCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB41C431EB2709000216D28 /* MenuCollectionViewCell.swift */; };
 		AFB41C461EB2709000216D28 /* MenuCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AFB41C441EB2709000216D28 /* MenuCollectionViewCell.xib */; };
+		FCDEBC0AB1B3BAF96E6C19DA /* Pods_antidotedanmark_app_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4CA466432CB1D9A23961348 /* Pods_antidotedanmark_app_ios.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		32CAAE9741468E2EAF2669B4 /* Pods-antidotedanmark-app-ios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-antidotedanmark-app-ios.debug.xcconfig"; path = "Pods/Target Support Files/Pods-antidotedanmark-app-ios/Pods-antidotedanmark-app-ios.debug.xcconfig"; sourceTree = "<group>"; };
+		AF08B9981EB373D100D5DC9F /* RSSHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RSSHelper.swift; sourceTree = "<group>"; };
+		AF08B99A1EB37F6800D5DC9F /* NewsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsViewController.swift; sourceTree = "<group>"; };
 		AF6A844B1EB26285000EFED7 /* antidotedanmark-app-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "antidotedanmark-app-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF6A844E1EB26286000EFED7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AF6A84501EB26286000EFED7 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
@@ -33,6 +39,7 @@
 		AF6A84551EB26286000EFED7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AF6A84581EB26286000EFED7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AF6A845A1EB26286000EFED7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AF8A74A60DD3EA6C8A299BAE /* Pods-antidotedanmark-app-ios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-antidotedanmark-app-ios.release.xcconfig"; path = "Pods/Target Support Files/Pods-antidotedanmark-app-ios/Pods-antidotedanmark-app-ios.release.xcconfig"; sourceTree = "<group>"; };
 		AF98924D1EB280600007FA62 /* RSSItemViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RSSItemViewModel.swift; sourceTree = "<group>"; };
 		AF98924F1EB280E60007FA62 /* InstructionItemViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InstructionItemViewModel.swift; sourceTree = "<group>"; };
 		AF9892511EB281DF0007FA62 /* RSSItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RSSItem.swift; sourceTree = "<group>"; };
@@ -44,6 +51,7 @@
 		AF98925D1EB28C7C0007FA62 /* InstructionCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InstructionCollectionViewCell.xib; sourceTree = "<group>"; };
 		AFB41C431EB2709000216D28 /* MenuCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuCollectionViewCell.swift; sourceTree = "<group>"; };
 		AFB41C441EB2709000216D28 /* MenuCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MenuCollectionViewCell.xib; sourceTree = "<group>"; };
+		E4CA466432CB1D9A23961348 /* Pods_antidotedanmark_app_ios.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_antidotedanmark_app_ios.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,17 +59,45 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FCDEBC0AB1B3BAF96E6C19DA /* Pods_antidotedanmark_app_ios.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5A4506C5909168D0E531DFE4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				32CAAE9741468E2EAF2669B4 /* Pods-antidotedanmark-app-ios.debug.xcconfig */,
+				AF8A74A60DD3EA6C8A299BAE /* Pods-antidotedanmark-app-ios.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		A5DFA4544368EE0DA4CB54EF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E4CA466432CB1D9A23961348 /* Pods_antidotedanmark_app_ios.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AF08B9971EB373B600D5DC9F /* API */ = {
+			isa = PBXGroup;
+			children = (
+				AF08B9981EB373D100D5DC9F /* RSSHelper.swift */,
+			);
+			name = API;
+			sourceTree = "<group>";
+		};
 		AF6A84421EB26285000EFED7 = {
 			isa = PBXGroup;
 			children = (
 				AF6A844D1EB26285000EFED7 /* antidotedanmark-app-ios */,
 				AF6A844C1EB26285000EFED7 /* Products */,
+				5A4506C5909168D0E531DFE4 /* Pods */,
+				A5DFA4544368EE0DA4CB54EF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -82,6 +118,7 @@
 				AF98924B1EB280300007FA62 /* Models */,
 				AF98924C1EB280430007FA62 /* ViewModels */,
 				AF98924A1EB280010007FA62 /* Views */,
+				AF08B9971EB373B600D5DC9F /* API */,
 				AF6A84551EB26286000EFED7 /* Assets.xcassets */,
 				AF6A84571EB26286000EFED7 /* LaunchScreen.storyboard */,
 				AF6A845A1EB26286000EFED7 /* Info.plist */,
@@ -125,6 +162,7 @@
 			children = (
 				AF6A84501EB26286000EFED7 /* MenuViewController.swift */,
 				AF98925A1EB288410007FA62 /* InstructionsViewController.swift */,
+				AF08B99A1EB37F6800D5DC9F /* NewsViewController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -136,9 +174,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AF6A845D1EB26286000EFED7 /* Build configuration list for PBXNativeTarget "antidotedanmark-app-ios" */;
 			buildPhases = (
+				1A0717C56F6FA7CCE29DDE5D /* [CP] Check Pods Manifest.lock */,
 				AF6A84471EB26285000EFED7 /* Sources */,
 				AF6A84481EB26285000EFED7 /* Frameworks */,
 				AF6A84491EB26285000EFED7 /* Resources */,
+				18575BAC93D8A2E18D253397 /* [CP] Embed Pods Frameworks */,
+				F6261E1E1E81609D52B453CB /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -199,6 +240,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		18575BAC93D8A2E18D253397 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-antidotedanmark-app-ios/Pods-antidotedanmark-app-ios-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1A0717C56F6FA7CCE29DDE5D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F6261E1E1E81609D52B453CB /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-antidotedanmark-app-ios/Pods-antidotedanmark-app-ios-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		AF6A84471EB26285000EFED7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -210,10 +299,12 @@
 				AF98924E1EB280600007FA62 /* RSSItemViewModel.swift in Sources */,
 				AF9892521EB281DF0007FA62 /* RSSItem.swift in Sources */,
 				AF9892581EB2827E0007FA62 /* IntructionsItems.swift in Sources */,
+				AF08B99B1EB37F6800D5DC9F /* NewsViewController.swift in Sources */,
 				AF6A844F1EB26286000EFED7 /* AppDelegate.swift in Sources */,
 				AF9892561EB2824E0007FA62 /* RSSItems.swift in Sources */,
 				AF98925B1EB288410007FA62 /* InstructionsViewController.swift in Sources */,
 				AFB41C451EB2709000216D28 /* MenuCollectionViewCell.swift in Sources */,
+				AF08B9991EB373D100D5DC9F /* RSSHelper.swift in Sources */,
 				AF98925E1EB28C7C0007FA62 /* InstructionCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -335,6 +426,7 @@
 		};
 		AF6A845E1EB26286000EFED7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 32CAAE9741468E2EAF2669B4 /* Pods-antidotedanmark-app-ios.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = SG4MLU2P43;
@@ -348,6 +440,7 @@
 		};
 		AF6A845F1EB26286000EFED7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AF8A74A60DD3EA6C8A299BAE /* Pods-antidotedanmark-app-ios.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = SG4MLU2P43;
