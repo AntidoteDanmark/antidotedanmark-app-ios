@@ -16,7 +16,48 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 	func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
 		// Override point for customization after application launch.
+		
+		setupAppearance()
+		
 		return true
+	}
+	
+	func setupAppearance() {
+		let adBackgroundColor = UIColor.darkGray
+		let adBackgroundColorDark = UIColor.darkGray
+		let adTitleColor = UIColor.white
+		let adYellowColor = UIColor(red: 255/266, green: 201/255, blue: 66/255, alpha: 1.0)
+		
+		UINavigationBar.appearance().backgroundColor = adBackgroundColor
+		UINavigationBar.appearance().setBackgroundImage(UIImage(), for: UIBarMetrics.default)
+//		UINavigationBar.appearance().shadowImage = UIImage()
+		UINavigationBar.appearance().tintColor = adYellowColor
+		UINavigationBar.appearance().titleTextAttributes = [NSForegroundColorAttributeName: adTitleColor]
+		UIBarButtonItem.appearance().setBackButtonTitlePositionAdjustment(UIOffsetMake(0, -70), for: UIBarMetrics.default)
+		UIApplication.shared.statusBarStyle = UIStatusBarStyle.lightContent
+//		UINavigationBar.appearance().setBarStyle:UIBarStyleBlack]
+//		UINavigationBar.appearance().setTranslucent:NO]
+//		UINavigationBar.appearance().setOpaque:YES]
+		
+//		UINavigationBar.appearance().setTitleTextAttributes:
+//			[NSDictionary dictionaryWithObjectsAndKeys:
+//			[UIColor ti_navigationBarTitleTextColor],
+//			NSForegroundColorAttributeName,
+//			[UIFont ti_primaryFontWithSize:18.0f],
+//			NSFontAttributeName,
+//			nil]]
+//		
+//		UINavigationBar.appearance().setBackIndicatorImage:kImgBack]
+//		UINavigationBar.appearance().setBackIndicatorTransitionMaskImage:kImgBack]
+		
+		// hide globally the back text in navigation bar
+//		[[UIBarButtonItem appearance] setBackButtonTitlePositionAdjustment:UIOffsetMake(0, -70.f) forBarMetrics:UIBarMetricsDefault]
+//		
+//		// Replace the 'Cancel' button in a search bar with a white cross globally
+//		[[UIBarButtonItem appearanceWhenContainedInInstancesOfClasses:@[[UISearchBar class]]]
+//			setTitle:@""]
+//		[[UIBarButtonItem appearanceWhenContainedInInstancesOfClasses:@[[UISearchBar class]]]
+//			setImage:[UIImage imageNamed:@"white_cross_icon"]]
 	}
 
 	func applicationWillResignActive(_ application: UIApplication) {
@@ -30,7 +71,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 	}
 
 	func applicationWillEnterForeground(_ application: UIApplication) {
-		// Called as part of the transition from the background to the active state; here you can undo many of the changes made on entering the background.
+		// Called as part of the transition from the background to the active state here you can undo many of the changes made on entering the background.
 	}
 
 	func applicationDidBecomeActive(_ application: UIApplication) {
