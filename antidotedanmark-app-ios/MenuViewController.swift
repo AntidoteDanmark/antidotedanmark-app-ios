@@ -16,7 +16,9 @@ class MenuViewController: UIViewController {
 	fileprivate let cellId = "cellId";
 	
 	override func viewDidLoad() {
-		super.viewDidLoad()
+		super.viewDidLoad()		
+		
+		self.title = "Antidote Danmark"
 		
 		collectionView.delegate = self
 		collectionView.dataSource = self
