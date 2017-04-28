@@ -35,20 +35,20 @@
                             <constraint firstAttribute="trailing" secondItem="wLD-ls-9k3" secondAttribute="trailing" id="ij4-Jk-b0a"/>
                         </constraints>
                     </view>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1u4-Zt-IiZ">
-                        <rect key="frame" x="16" y="244.5" width="42.5" height="24"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1u4-Zt-IiZ">
+                        <rect key="frame" x="16" y="245" width="248" height="24"/>
                         <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                         <color key="textColor" red="0.99822193380000002" green="0.79420560600000001" blue="0.046468012029999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="bj5-oS-247">
+                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bj5-oS-247">
                         <rect key="frame" x="12" y="277.5" width="292" height="362"/>
                         <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </string>
                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                     </textView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1/6" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8zD-bu-iVf">
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="1/6" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8zD-bu-iVf">
                         <rect key="frame" x="276" y="244.5" width="28" height="24"/>
                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                         <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
@@ -60,9 +60,10 @@
             <constraints>
                 <constraint firstAttribute="trailing" secondItem="hu1-9h-iY6" secondAttribute="trailing" id="76i-jb-RQd"/>
                 <constraint firstItem="hu1-9h-iY6" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="8E7-Ha-peN"/>
+                <constraint firstItem="8zD-bu-iVf" firstAttribute="top" secondItem="hu1-9h-iY6" secondAttribute="bottom" constant="16" id="9Vi-DO-jvb"/>
                 <constraint firstItem="1u4-Zt-IiZ" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="16" id="BTt-FW-amE"/>
                 <constraint firstAttribute="trailing" secondItem="8zD-bu-iVf" secondAttribute="trailing" constant="16" id="Cvu-lV-BTB"/>
-                <constraint firstItem="8zD-bu-iVf" firstAttribute="centerY" secondItem="1u4-Zt-IiZ" secondAttribute="centerY" id="HgM-aM-6of"/>
+                <constraint firstItem="8zD-bu-iVf" firstAttribute="leading" secondItem="1u4-Zt-IiZ" secondAttribute="trailing" constant="12" id="EyG-03-lmH"/>
                 <constraint firstItem="hu1-9h-iY6" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="LeB-7R-ulS"/>
                 <constraint firstAttribute="bottom" secondItem="bj5-oS-247" secondAttribute="bottom" id="MwS-un-fUf"/>
                 <constraint firstItem="8zD-bu-iVf" firstAttribute="trailing" secondItem="bj5-oS-247" secondAttribute="trailing" id="bWG-BD-QkT"/>
