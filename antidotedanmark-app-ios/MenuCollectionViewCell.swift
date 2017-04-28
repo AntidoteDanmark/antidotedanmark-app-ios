@@ -24,7 +24,6 @@ class MenuCollectionViewCell: UICollectionViewCell {
 extension MenuCollectionViewCell {
 	public func configure(model: RSSItem) {
 		titleLabel.text = model.title
-		link = model.link
+		link = URL(string: model.link)
 	}
-	
 }
