@@ -17,7 +17,15 @@ class InstructionCollectionViewCell: UICollectionViewCell {
 	
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
     }
 
+}
+
+extension InstructionCollectionViewCell {
+	public func configure(model: InstructionItemViewModel) {
+		imageView.image = model.image
+		titleLabel.text = model.title
+		pageLabel.text = model.step
+		descriptionView.text = model.description
+	}
 }
