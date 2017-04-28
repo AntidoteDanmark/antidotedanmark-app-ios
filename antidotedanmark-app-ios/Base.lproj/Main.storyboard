@@ -26,13 +26,13 @@
                                 <rect key="frame" x="0.0" y="64" width="375" height="307"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="Tvk-Gh-LVd">
-                                        <rect key="frame" x="111.5" y="20" width="151" height="152"/>
+                                        <rect key="frame" x="111" y="20" width="152" height="152.5"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="Tvk-Gh-LVd" secondAttribute="height" multiplier="1:1" id="AgV-Im-pL1"/>
                                         </constraints>
                                     </imageView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZPk-gb-UaP">
-                                        <rect key="frame" x="20" y="197" width="335" height="35"/>
+                                        <rect key="frame" x="20" y="197.5" width="335" height="34.5"/>
                                         <color key="backgroundColor" red="0.99822193384170532" green="0.79420560598373413" blue="0.046468012034893036" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
                                         <state key="normal" title="FØRSTEHJÆLP">
@@ -92,7 +92,9 @@
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="YOU-2M-mBO" secondAttribute="bottom" id="uLN-nD-Oat"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="ZVU-va-TAq"/>
+                    <navigationItem key="navigationItem" id="ZVU-va-TAq">
+                        <barButtonItem key="backBarButtonItem" title=" " id="rz7-76-UyG"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="collectionView" destination="YOU-2M-mBO" id="h9f-d5-9Ci"/>
                         <outlet property="firstHelpButton" destination="ZPk-gb-UaP" id="Jyt-H2-Pmg"/>
