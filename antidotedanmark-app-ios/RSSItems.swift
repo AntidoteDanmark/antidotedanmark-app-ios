@@ -10,4 +10,8 @@ import Foundation
 
 public struct RSSItems {
 	public let items: [RSSItem]
+
+	public init(items: [RSSItem]) {
+		self.items = items
+	}
 }

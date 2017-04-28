@@ -14,4 +14,12 @@ public struct InstructionItem {
 	public let description: String
 	public let step: Int
 	public let maxStep: Int
+	
+	public init(image: UIImage, title: String, description: String, step: Int, maxStep: Int) {
+		self.image = image
+		self.title = title
+		self.description = description
+		self.step = step
+		self.maxStep = maxStep
+	}
 }

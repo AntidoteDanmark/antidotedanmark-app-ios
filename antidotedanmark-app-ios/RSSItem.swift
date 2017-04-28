@@ -12,4 +12,10 @@ public struct RSSItem {
 	public let title: String
 	public let description: String
 	public let link: URL
+	
+	public init(title: String, description: String, link: URL) {
+		self.title = title
+		self.description = description
+		self.link = link
+	}
 }

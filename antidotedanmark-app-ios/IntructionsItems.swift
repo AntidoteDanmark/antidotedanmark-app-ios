@@ -10,4 +10,8 @@ import Foundation
 
 public struct InstructionItems {
 	public let items: [InstructionItem]
+	
+	public init(items: [InstructionItem]) {
+		self.items = items
+	}
 }
