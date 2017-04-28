@@ -29,7 +29,16 @@ class MenuViewController: UIViewController {
 		super.didReceiveMemoryWarning()
 	}
 	
-	
+	@IBAction func firstAidButton(_ sender: Any) {
+		self.navigationController?.pushViewController(InstructionsViewController(), animated: true)
+	}
+
+	@IBAction func videoGuideButton(_ sender: Any) {
+		if let url = URL(string: "https://www.youtube.com/watch?v=K2BGJRLIEGY") {
+			UIApplication.shared.openURL(url)
+		}		
+	}
+
 }
 
 extension MenuViewController: UICollectionViewDelegateFlowLayout {
