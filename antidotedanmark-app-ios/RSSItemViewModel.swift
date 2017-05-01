@@ -11,9 +11,9 @@ import Foundation
 public struct RSSItemViewModel {
 	public let title: String
 	public let description: String
-	public let link: URL
+	public let link: String
 	
-	public init(title: String, description: String, link: URL) {
+	public init(title: String, description: String, link: String) {
 		self.title = title
 		self.description = description
 		self.link = link
