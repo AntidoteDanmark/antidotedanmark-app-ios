@@ -14,6 +14,7 @@ class MenuViewController: UIViewController {
 	@IBOutlet weak var firstHelpButton: UIButton!
 	@IBOutlet weak var videoGuideButton: UIButton!
 	fileprivate let cellId = "cellId";
+	fileprivate var cellViewModels: [RSSItemViewModel] = [] { didSet{ self.collectionView.reloadData() }}
 	
 	override func viewDidLoad() {
 		super.viewDidLoad()		
@@ -23,14 +24,19 @@ class MenuViewController: UIViewController {
 		collectionView.delegate = self
 		collectionView.dataSource = self
 		collectionView.register(UINib(nibName: "MenuCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: cellId)
+		RSSHelper.getRSSItems { (item) in
+			if let items = item {
+				var viewModels = [RSSItemViewModel]()
+				for item in items.items {
+					viewModels.append(RSSItemViewModel(title: item.title, description: item.description, link: item.link))
+				}
+				self.cellViewModels = viewModels
+			}
+		}
 	}
 
 	override func didReceiveMemoryWarning() {
 		super.didReceiveMemoryWarning()
-	}
-	
-	@IBAction func firstAidButton(_ sender: Any) {
-		self.navigationController?.pushViewController(InstructionsViewController(), animated: true)
 	}
 
 	@IBAction func videoGuideButton(_ sender: Any) {
@@ -38,7 +44,15 @@ class MenuViewController: UIViewController {
 			UIApplication.shared.openURL(url)
 		}		
 	}
-
+	
+	override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+		if segue.identifier == "newsSegue" {
+			if let vc = segue.destination as? NewsViewController {
+				vc.viewModel = sender as? RSSItemViewModel
+			}
+		}
+	}
+	
 }
 
 extension MenuViewController: UICollectionViewDelegateFlowLayout {
@@ -65,9 +79,15 @@ extension MenuViewController: UICollectionViewDelegateFlowLayout {
 	func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
 		let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellId, for: indexPath) as! MenuCollectionViewCell
 		
+		cell.configure(model: cellViewModels[indexPath.row])
+		
 		return cell
 	}
 
+	func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+		self.performSegue(withIdentifier: "newsSegue", sender: cellViewModels[indexPath.row])
+	}
+	
 }
 
 extension MenuViewController: UICollectionViewDataSource {
@@ -77,7 +97,7 @@ extension MenuViewController: UICollectionViewDataSource {
 	}
 	
 	func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-		return 3
+		return cellViewModels.count
 	}
 	
 }
