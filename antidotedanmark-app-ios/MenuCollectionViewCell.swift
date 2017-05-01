@@ -22,8 +22,9 @@ class MenuCollectionViewCell: UICollectionViewCell {
 }
 
 extension MenuCollectionViewCell {
-	public func configure(model: RSSItem) {
+	public func configure(model: RSSItemViewModel) {
 		titleLabel.text = model.title
 		link = URL(string: model.link)
+		imageView.image = UIImage(named: "rssItem")
 	}
 }
