@@ -38,6 +38,10 @@ class MenuViewController: UIViewController {
 	override func didReceiveMemoryWarning() {
 		super.didReceiveMemoryWarning()
 	}
+	
+	@IBAction func firstHelpButton(_ sender: Any) {
+		self.performSegue(withIdentifier: "instructionsSegue", sender: nil)
+	}
 
 	@IBAction func videoGuideButton(_ sender: Any) {
 		if let url = URL(string: "https://www.youtube.com/watch?v=K2BGJRLIEGY") {

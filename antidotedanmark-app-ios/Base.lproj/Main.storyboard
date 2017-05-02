@@ -26,20 +26,20 @@
                                 <rect key="frame" x="0.0" y="64" width="375" height="281.5"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="Tvk-Gh-LVd">
-                                        <rect key="frame" x="119.5" y="18" width="135" height="135"/>
+                                        <rect key="frame" x="119.5" y="18" width="135" height="135.5"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="Tvk-Gh-LVd" secondAttribute="height" multiplier="1:1" id="AgV-Im-pL1"/>
                                         </constraints>
                                     </imageView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZPk-gb-UaP">
-                                        <rect key="frame" x="20" y="175" width="335" height="35"/>
+                                        <rect key="frame" x="20" y="175.5" width="335" height="34.5"/>
                                         <color key="backgroundColor" red="0.99822193384170532" green="0.79420560598373413" blue="0.046468012034893036" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
                                         <state key="normal" title="FØRSTEHJÆLP">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
-                                            <segue destination="jCl-qM-n90" kind="show" identifier="instructionsSegue" id="gAV-qq-RG2"/>
+                                            <action selector="firstHelpButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="c3t-XR-TEG"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g9U-VV-Typ">
@@ -101,8 +101,10 @@
                     <connections>
                         <outlet property="collectionView" destination="YOU-2M-mBO" id="h9f-d5-9Ci"/>
                         <outlet property="firstHelpButton" destination="ZPk-gb-UaP" id="Jyt-H2-Pmg"/>
+                        <outlet property="imageView" destination="Tvk-Gh-LVd" id="ni5-sd-NhD"/>
                         <outlet property="videoGuideButton" destination="g9U-VV-Typ" id="RfQ-b7-we7"/>
                         <segue destination="EDt-1S-hVQ" kind="show" identifier="newsSegue" id="4Re-Um-fal"/>
+                        <segue destination="jCl-qM-n90" kind="show" identifier="instructionsSegue" id="n7R-7U-a4B"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
