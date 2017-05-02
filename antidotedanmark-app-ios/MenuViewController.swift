@@ -48,9 +48,14 @@ class MenuViewController: UIViewController {
 	}
 
 	@IBAction func videoGuideButton(_ sender: Any) {
-		if let url = URL(string: "https://www.youtube.com/watch?v=K2BGJRLIEGY") {
+		openURL("http://www.youtube.com/watch?v=K2BGJRLIEGY")
+	}
+	
+	
+	func openURL(_ url: String) {
+		if let url = URL(string: url) {
 			UIApplication.shared.openURL(url)
-		}		
+		}
 	}
 	
 	override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -93,7 +98,8 @@ extension MenuViewController: UICollectionViewDelegateFlowLayout {
 	}
 
 	func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-		self.performSegue(withIdentifier: "newsSegue", sender: cellViewModels[indexPath.row])
+		//self.performSegue(withIdentifier: "newsSegue", sender: cellViewModels[indexPath.row])
+		openURL(cellViewModels[indexPath.row].link)
 	}
 	
 }
