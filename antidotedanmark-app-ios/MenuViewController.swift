@@ -11,6 +11,7 @@ import UIKit
 class MenuViewController: UIViewController {
 
 	@IBOutlet weak var collectionView: UICollectionView!
+	@IBOutlet weak var imageView: UIImageView!
 	@IBOutlet weak var firstHelpButton: UIButton!
 	@IBOutlet weak var videoGuideButton: UIButton!
 	fileprivate let cellId = "cellId";
@@ -25,6 +26,9 @@ class MenuViewController: UIViewController {
 		collectionView.dataSource = self
 		collectionView.register(UINib(nibName: "MenuCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: cellId)
 		
+		let logoRecognizer = UITapGestureRecognizer(target: self, action: #selector(MenuViewController.visitWebsite))
+		imageView.addGestureRecognizer(logoRecognizer)
+		imageView.isUserInteractionEnabled = true
 	}
 	
 	override func viewWillAppear(_ animated: Bool) {
@@ -51,6 +55,9 @@ class MenuViewController: UIViewController {
 		openURL("http://www.youtube.com/watch?v=K2BGJRLIEGY")
 	}
 	
+	func visitWebsite() {
+		openURL("http://www.antidote.dk")
+	}
 	
 	func openURL(_ url: String) {
 		if let url = URL(string: url) {
