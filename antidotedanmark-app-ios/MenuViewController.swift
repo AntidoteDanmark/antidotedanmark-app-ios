@@ -24,6 +24,10 @@ class MenuViewController: UIViewController {
 		collectionView.delegate = self
 		collectionView.dataSource = self
 		collectionView.register(UINib(nibName: "MenuCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: cellId)
+		
+	}
+	
+	override func viewWillAppear(_ animated: Bool) {
 		RSSHelper.getRSSItems { (item) in
 			if let items = item {
 				var viewModels = [RSSItemViewModel]()
