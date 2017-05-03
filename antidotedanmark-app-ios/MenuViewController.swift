@@ -86,13 +86,13 @@ extension MenuViewController: UICollectionViewDelegateFlowLayout {
 	}
 	
 	func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
-		let inset = collectionView.bounds.size.width * 0.05
+		let inset = collectionView.bounds.size.width * 0.04
 		return UIEdgeInsets(top: inset, left: 0, bottom: inset, right: 0)
 	}
 	
 	func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-		let width: CGFloat = collectionView.bounds.size.width * 0.9
-		let height: CGFloat = 64
+		let width: CGFloat = collectionView.bounds.size.width * 0.92
+		let height: CGFloat = 68
 		return CGSize(width: width, height: height)
 	}
 	

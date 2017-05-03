@@ -15,8 +15,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
 	func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-		// Override point for customization after application launch.
-		
 		setupAppearance()
 		
 		return true
@@ -30,13 +28,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 		
 		UINavigationBar.appearance().backgroundColor = adBackgroundColor
 		UINavigationBar.appearance().setBackgroundImage(UIImage(), for: UIBarMetrics.default)
-//		UINavigationBar.appearance().shadowImage = UIImage()
 		UINavigationBar.appearance().tintColor = adYellowColor
 		UINavigationBar.appearance().titleTextAttributes = [NSForegroundColorAttributeName: adTitleColor]
 		UIBarButtonItem.appearance().setBackButtonTitlePositionAdjustment(UIOffsetMake(0, -70), for: UIBarMetrics.default)
 		UINavigationBar.appearance().barTintColor = UIColor.gray
 		UIApplication.shared.statusBarStyle = UIStatusBarStyle.lightContent
-		//UIApplication.shared.setStatusBarStyle(.lightContent, animated: false)
 		
 		let statusBarView = UIView(frame: UIApplication.shared.statusBarFrame)
 		statusBarView.backgroundColor = adBackgroundColor
