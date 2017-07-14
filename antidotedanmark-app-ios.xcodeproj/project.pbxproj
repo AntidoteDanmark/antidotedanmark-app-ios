@@ -202,7 +202,7 @@
 				TargetAttributes = {
 					AF6A844A1EB26285000EFED7 = {
 						CreatedOnToolsVersion = 8.3.2;
-						DevelopmentTeam = SG4MLU2P43;
+						DevelopmentTeam = 7M2WMHQGT6;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -429,7 +429,7 @@
 			baseConfigurationReference = 32CAAE9741468E2EAF2669B4 /* Pods-antidotedanmark-app-ios.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = SG4MLU2P43;
+				DEVELOPMENT_TEAM = 7M2WMHQGT6;
 				INFOPLIST_FILE = "antidotedanmark-app-ios/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.antidote.antidote;
@@ -443,7 +443,7 @@
 			baseConfigurationReference = AF8A74A60DD3EA6C8A299BAE /* Pods-antidotedanmark-app-ios.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = SG4MLU2P43;
+				DEVELOPMENT_TEAM = 7M2WMHQGT6;
 				INFOPLIST_FILE = "antidotedanmark-app-ios/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.antidote.antidote;
