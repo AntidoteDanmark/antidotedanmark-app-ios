@@ -432,7 +432,7 @@
 				DEVELOPMENT_TEAM = SG4MLU2P43;
 				INFOPLIST_FILE = "antidotedanmark-app-ios/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.casperriboe.antidote;
+				PRODUCT_BUNDLE_IDENTIFIER = com.antidote.antidote;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -446,7 +446,7 @@
 				DEVELOPMENT_TEAM = SG4MLU2P43;
 				INFOPLIST_FILE = "antidotedanmark-app-ios/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.casperriboe.antidote;
+				PRODUCT_BUNDLE_IDENTIFIER = com.antidote.antidote;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
