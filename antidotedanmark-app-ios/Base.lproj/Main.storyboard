@@ -26,13 +26,13 @@
                                 <rect key="frame" x="0.0" y="64" width="375" height="281.5"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="Tvk-Gh-LVd">
-                                        <rect key="frame" x="119.5" y="18" width="135" height="135.5"/>
+                                        <rect key="frame" x="120" y="18" width="134" height="135"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="Tvk-Gh-LVd" secondAttribute="height" multiplier="1:1" id="AgV-Im-pL1"/>
                                         </constraints>
                                     </imageView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZPk-gb-UaP">
-                                        <rect key="frame" x="20" y="175.5" width="335" height="34.5"/>
+                                        <rect key="frame" x="20" y="175" width="335" height="35"/>
                                         <color key="backgroundColor" red="0.99822193384170532" green="0.79420560598373413" blue="0.046468012034893036" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
                                         <state key="normal" title="FØRSTEHJÆLP">
