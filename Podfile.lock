@@ -1,11 +1,11 @@
 PODS:
-  - FeedKit (5.1.0)
+  - FeedKit (6.1.1)
 
 DEPENDENCIES:
   - FeedKit
 
 SPEC CHECKSUMS:
-  FeedKit: e692fb1e155ca829d0458fc6ce2f593de1b194f8
+  FeedKit: b8037e48c6317c8a3c480285c55b5f7bf2b74f5e
 
 PODFILE CHECKSUM: c3571e2a0cdd56d73e6d13d793a5c073eb10d849
 
