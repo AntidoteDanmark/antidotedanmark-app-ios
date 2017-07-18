@@ -13,11 +13,21 @@ class RSSHelper {
 	
 	typealias RSSCompletionHandler = (_ result: RSSItems?) -> Void
 	
-	static let rssURL = URL(string: "http://antidote.dk/rss.xml")!
+	static let rssEndpoint = "http://antidote.dk/rss.xml"
 	
 	static func getRSSItems(completion: @escaping RSSCompletionHandler) {
-		FeedParser(URL: rssURL)?.parse({ (result) in
-			
+		guard let url = URL(string: rssEndpoint) else {
+			print("Endpoint format invalid.")
+			return
+		}
+		
+		guard let feedParser = FeedParser(URL: url) else {
+			print("Failed to create parser from endpoint.")
+			completion(nil)
+			return
+		}
+		
+		feedParser.parseAsync { (result) in
 			var resultItems = [RSSItem]()
 			if let items = result.rssFeed?.items {
 				for item in items {
@@ -28,7 +38,7 @@ class RSSHelper {
 			}
 			
 			completion(RSSItems(items: resultItems))
-		})
+		}
 	}
 	
 }

@@ -15,7 +15,7 @@ class MenuViewController: UIViewController {
 	@IBOutlet weak var firstHelpButton: UIButton!
 	@IBOutlet weak var videoGuideButton: UIButton!
 	fileprivate let cellId = "cellId";
-	fileprivate var cellViewModels: [RSSItemViewModel] = [] { didSet{ self.collectionView.reloadData() }}
+	fileprivate var cellViewModels: [RSSItemViewModel] = [] { didSet { self.collectionView.reloadData() } }
 	
 	override func viewDidLoad() {
 		super.viewDidLoad()		
@@ -32,19 +32,17 @@ class MenuViewController: UIViewController {
 	}
 	
 	override func viewWillAppear(_ animated: Bool) {
+		super.viewWillAppear(animated)
 		RSSHelper.getRSSItems { (item) in
-			if let items = item {
-				var viewModels = [RSSItemViewModel]()
-				for item in items.items {
-					viewModels.append(RSSItemViewModel(title: item.title, description: item.description, link: item.link))
-				}
-				self.cellViewModels = viewModels
+			guard let items = item else {
+				return
 			}
+			var viewModels = [RSSItemViewModel]()
+			for item in items.items {
+				viewModels.append(RSSItemViewModel(title: item.title, description: item.description, link: item.link))
+			}
+			self.cellViewModels = viewModels
 		}
-	}
-
-	override func didReceiveMemoryWarning() {
-		super.didReceiveMemoryWarning()
 	}
 	
 	@IBAction func firstHelpButton(_ sender: Any) {
