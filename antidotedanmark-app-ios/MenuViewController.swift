@@ -10,6 +10,7 @@ import UIKit
 
 class MenuViewController: UIViewController {
 
+	@IBOutlet weak var loadingIndicator: UIActivityIndicatorView!
 	@IBOutlet weak var collectionView: UICollectionView!
 	@IBOutlet weak var imageView: UIImageView!
 	@IBOutlet weak var firstHelpButton: UIButton!
@@ -31,8 +32,11 @@ class MenuViewController: UIViewController {
 		imageView.isUserInteractionEnabled = true
 	}
 	
-	override func viewWillAppear(_ animated: Bool) {
-		super.viewWillAppear(animated)
+	override func viewDidAppear(_ animated: Bool) {
+		super.viewDidAppear(animated)
+		loadingIndicator.startAnimating()
+		loadingIndicator.isHidden = false
+		
 		RSSHelper.getRSSItems { (item) in
 			guard let items = item else {
 				return
@@ -42,6 +46,9 @@ class MenuViewController: UIViewController {
 				viewModels.append(RSSItemViewModel(title: item.title, description: item.description, link: item.link))
 			}
 			self.cellViewModels = viewModels
+			
+			self.loadingIndicator.stopAnimating()
+			self.loadingIndicator.isHidden = true
 		}
 	}
 	

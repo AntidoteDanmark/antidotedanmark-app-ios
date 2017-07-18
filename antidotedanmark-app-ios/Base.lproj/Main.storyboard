@@ -81,6 +81,10 @@
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
+                                <activityIndicatorView key="backgroundView" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" style="white" id="5Ms-Q3-MsE">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="321.5"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                </activityIndicatorView>
                                 <cells/>
                             </collectionView>
                         </subviews>
@@ -102,6 +106,7 @@
                         <outlet property="collectionView" destination="YOU-2M-mBO" id="h9f-d5-9Ci"/>
                         <outlet property="firstHelpButton" destination="ZPk-gb-UaP" id="Jyt-H2-Pmg"/>
                         <outlet property="imageView" destination="Tvk-Gh-LVd" id="ni5-sd-NhD"/>
+                        <outlet property="loadingIndicator" destination="5Ms-Q3-MsE" id="xgl-nm-Jsc"/>
                         <outlet property="videoGuideButton" destination="g9U-VV-Typ" id="RfQ-b7-we7"/>
                         <segue destination="EDt-1S-hVQ" kind="show" identifier="newsSegue" id="4Re-Um-fal"/>
                         <segue destination="jCl-qM-n90" kind="show" identifier="instructionsSegue" id="n7R-7U-a4B"/>
