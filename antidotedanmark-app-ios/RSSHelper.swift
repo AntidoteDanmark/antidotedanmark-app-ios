@@ -18,6 +18,7 @@ class RSSHelper {
 	static func getRSSItems(completion: @escaping RSSCompletionHandler) {
 		guard let url = URL(string: rssEndpoint) else {
 			print("Endpoint format invalid.")
+			completion(nil)
 			return
 		}
 		
