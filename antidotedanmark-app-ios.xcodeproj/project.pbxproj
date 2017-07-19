@@ -25,6 +25,7 @@
 		AF98925F1EB28C7C0007FA62 /* InstructionCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF98925D1EB28C7C0007FA62 /* InstructionCollectionViewCell.xib */; };
 		AFB41C451EB2709000216D28 /* MenuCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB41C431EB2709000216D28 /* MenuCollectionViewCell.swift */; };
 		AFB41C461EB2709000216D28 /* MenuCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AFB41C441EB2709000216D28 /* MenuCollectionViewCell.xib */; };
+		AFFEA7811F1FD3DB0001E42F /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFFEA7801F1FD3DB0001E42F /* WebViewController.swift */; };
 		FCDEBC0AB1B3BAF96E6C19DA /* Pods_antidotedanmark_app_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4CA466432CB1D9A23961348 /* Pods_antidotedanmark_app_ios.framework */; };
 /* End PBXBuildFile section */
 
@@ -51,6 +52,7 @@
 		AF98925D1EB28C7C0007FA62 /* InstructionCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InstructionCollectionViewCell.xib; sourceTree = "<group>"; };
 		AFB41C431EB2709000216D28 /* MenuCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuCollectionViewCell.swift; sourceTree = "<group>"; };
 		AFB41C441EB2709000216D28 /* MenuCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MenuCollectionViewCell.xib; sourceTree = "<group>"; };
+		AFFEA7801F1FD3DB0001E42F /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 		E4CA466432CB1D9A23961348 /* Pods_antidotedanmark_app_ios.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_antidotedanmark_app_ios.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -161,6 +163,7 @@
 			isa = PBXGroup;
 			children = (
 				AF6A84501EB26286000EFED7 /* MenuViewController.swift */,
+				AFFEA7801F1FD3DB0001E42F /* WebViewController.swift */,
 				AF98925A1EB288410007FA62 /* InstructionsViewController.swift */,
 				AF08B99A1EB37F6800D5DC9F /* NewsViewController.swift */,
 			);
@@ -297,6 +300,7 @@
 				AF9892541EB281ED0007FA62 /* InstructionItem.swift in Sources */,
 				AF9892501EB280E60007FA62 /* InstructionItemViewModel.swift in Sources */,
 				AF98924E1EB280600007FA62 /* RSSItemViewModel.swift in Sources */,
+				AFFEA7811F1FD3DB0001E42F /* WebViewController.swift in Sources */,
 				AF9892521EB281DF0007FA62 /* RSSItem.swift in Sources */,
 				AF9892581EB2827E0007FA62 /* IntructionsItems.swift in Sources */,
 				AF08B99B1EB37F6800D5DC9F /* NewsViewController.swift in Sources */,

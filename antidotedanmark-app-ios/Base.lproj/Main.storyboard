@@ -26,13 +26,13 @@
                                 <rect key="frame" x="0.0" y="64" width="375" height="281.5"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="Tvk-Gh-LVd">
-                                        <rect key="frame" x="119.5" y="18" width="135" height="135.5"/>
+                                        <rect key="frame" x="120" y="18" width="134" height="135"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="Tvk-Gh-LVd" secondAttribute="height" multiplier="1:1" id="AgV-Im-pL1"/>
                                         </constraints>
                                     </imageView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZPk-gb-UaP">
-                                        <rect key="frame" x="20" y="175.5" width="335" height="34.5"/>
+                                        <rect key="frame" x="20" y="175" width="335" height="35"/>
                                         <color key="backgroundColor" red="0.99822193384170532" green="0.79420560598373413" blue="0.046468012034893036" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
                                         <state key="normal" title="FØRSTEHJÆLP">
@@ -110,11 +110,46 @@
                         <outlet property="videoGuideButton" destination="g9U-VV-Typ" id="RfQ-b7-we7"/>
                         <segue destination="EDt-1S-hVQ" kind="show" identifier="newsSegue" id="4Re-Um-fal"/>
                         <segue destination="jCl-qM-n90" kind="show" identifier="instructionsSegue" id="n7R-7U-a4B"/>
+                        <segue destination="jp2-Vo-cip" kind="show" identifier="newsWebSegue" id="N2R-k6-GSg"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1911.2" y="37.331334332833585"/>
+        </scene>
+        <!--Web View Controller-->
+        <scene sceneID="9hT-Ee-0el">
+            <objects>
+                <viewController id="jp2-Vo-cip" customClass="WebViewController" customModule="antidotedanmark_app_ios" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="dlP-sy-Bc3"/>
+                        <viewControllerLayoutGuide type="bottom" id="yc6-cE-ubG"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="nBq-zL-FDT">
+                        <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" scalesPageToFit="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4st-Eg-Aab">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="4st-Eg-Aab" secondAttribute="trailing" id="8x4-AV-13y"/>
+                            <constraint firstItem="yc6-cE-ubG" firstAttribute="top" secondItem="4st-Eg-Aab" secondAttribute="bottom" id="I6m-Ki-zv4"/>
+                            <constraint firstItem="4st-Eg-Aab" firstAttribute="leading" secondItem="nBq-zL-FDT" secondAttribute="leading" id="a9q-nt-nD7"/>
+                            <constraint firstItem="4st-Eg-Aab" firstAttribute="top" secondItem="dlP-sy-Bc3" secondAttribute="bottom" id="yRB-Bn-X9m"/>
+                        </constraints>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
+                    <connections>
+                        <outlet property="webView" destination="4st-Eg-Aab" id="p9e-Pe-JNj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="o8G-2f-GR8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2844" y="37"/>
         </scene>
         <!--News View Controller-->
         <scene sceneID="T9s-Aj-cd9">
@@ -225,7 +260,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dZm-dF-SSG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2812" y="36.431784107946029"/>
+            <point key="canvasLocation" x="2844" y="-788"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="dgq-Zw-Mfv">

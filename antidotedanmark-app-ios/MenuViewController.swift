@@ -65,15 +65,25 @@ class MenuViewController: UIViewController {
 	}
 	
 	func openURL(_ url: String) {
-		if let url = URL(string: url) {
-			UIApplication.shared.openURL(url)
-		}
+		self.performSegue(withIdentifier: "newsWebSegue", sender: url)
+		
+//		if let url = URL(string: url) {
+//			UIApplication.shared.openURL(url)
+//		}
 	}
 	
 	override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
 		if segue.identifier == "newsSegue" {
 			if let vc = segue.destination as? NewsViewController {
 				vc.viewModel = sender as? RSSItemViewModel
+			}
+		} else if segue.identifier == "newsWebSegue" {
+			if let vc = segue.destination as? WebViewController {
+				guard let url = sender as? String else {
+					return
+				}
+				
+				vc.url = url
 			}
 		}
 	}
@@ -110,7 +120,6 @@ extension MenuViewController: UICollectionViewDelegateFlowLayout {
 	}
 
 	func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-		//self.performSegue(withIdentifier: "newsSegue", sender: cellViewModels[indexPath.row])
 		openURL(cellViewModels[indexPath.row].link)
 	}
 	
