@@ -30,10 +30,7 @@ class MenuViewController: UIViewController {
 		let logoRecognizer = UITapGestureRecognizer(target: self, action: #selector(MenuViewController.visitWebsite))
 		imageView.addGestureRecognizer(logoRecognizer)
 		imageView.isUserInteractionEnabled = true
-	}
-	
-	override func viewDidAppear(_ animated: Bool) {
-		super.viewDidAppear(animated)
+		
 		loadData()
 	}
 	
@@ -46,10 +43,6 @@ class MenuViewController: UIViewController {
 	}
 	
 	func loadData() {
-		if !cellViewModels.isEmpty {
-			return
-		}
-		
 		loadingIndicator.startAnimating()
 		loadingIndicator.isHidden = false
 		
