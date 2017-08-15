@@ -17,6 +17,12 @@ class InstructionCollectionViewCell: UICollectionViewCell {
 	
     override func awakeFromNib() {
         super.awakeFromNib()
+
+		if #available(iOS 10.0, *) {
+		} else {
+			// Apply fix for text color bug in iOS 9
+			descriptionView.isSelectable = true
+		}
     }
 
 }
