@@ -34,6 +34,22 @@ class MenuViewController: UIViewController {
 	
 	override func viewDidAppear(_ animated: Bool) {
 		super.viewDidAppear(animated)
+		loadData()
+	}
+	
+	@IBAction func firstHelpButton(_ sender: Any) {
+		self.performSegue(withIdentifier: "instructionsSegue", sender: nil)
+	}
+
+	@IBAction func videoGuideButton(_ sender: Any) {
+		openURL("http://www.youtube.com/watch?v=K2BGJRLIEGY")
+	}
+	
+	func loadData() {
+		if !cellViewModels.isEmpty {
+			return
+		}
+		
 		loadingIndicator.startAnimating()
 		loadingIndicator.isHidden = false
 		
@@ -52,24 +68,12 @@ class MenuViewController: UIViewController {
 		}
 	}
 	
-	@IBAction func firstHelpButton(_ sender: Any) {
-		self.performSegue(withIdentifier: "instructionsSegue", sender: nil)
-	}
-
-	@IBAction func videoGuideButton(_ sender: Any) {
-		openURL("http://www.youtube.com/watch?v=K2BGJRLIEGY")
-	}
-	
 	func visitWebsite() {
 		openURL("http://www.antidote.dk")
 	}
 	
 	func openURL(_ url: String) {
 		self.performSegue(withIdentifier: "newsWebSegue", sender: url)
-		
-//		if let url = URL(string: url) {
-//			UIApplication.shared.openURL(url)
-//		}
 	}
 	
 	override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
