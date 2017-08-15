@@ -16,6 +16,7 @@ class WebViewController: UIViewController, UIWebViewDelegate {
 	override func viewDidLoad() {
 		super.viewDidLoad()
 		webView.delegate = self
+		self.title = "Loading.."
 	}
 	
 	override func viewWillAppear(_ animated: Bool) {
